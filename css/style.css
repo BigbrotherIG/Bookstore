@@ -63,6 +63,10 @@ li  {
     font-family: 'Fredoka', 'san-serif';
 }
 
+.text-h2 {
+    font-size: 2.2em;
+}
+
 main {
     margin: 0 5vw;
 }
@@ -114,6 +118,7 @@ main {
     border-radius: 50%;
 }
 
+/* About Section */
 .about {
     height: 80vh;
     margin: 100px 0;
@@ -141,6 +146,7 @@ main {
     width: 50%;
 }
 
+/* Gallery Section */
 .gallery {
     height: 85vh;
     margin: 100px 0;
@@ -176,11 +182,21 @@ main {
 }
 
 .card img:hover {
-    transform: scale(1.1);
+    transform: scale(1.03);
     cursor: pointer;
 }
 .card-text {
     padding: 10px 2px;
     justify-content: center;
     align-items: center;
+}
+
+/* Review Section */
+
+.testimionials{
+    height: 50vh;
+    /* margin: 100px 0; */
+}
+.reviews {
+    grid-template-columns: repeat(4, 1fr);
 }
