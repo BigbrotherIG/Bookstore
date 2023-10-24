@@ -130,7 +130,6 @@ main {
     font-family: 'Tilt neon', 'san-serif';
 }
 
-
 .about-wrapper {
     margin: 0 5vw;
     justify-content: space-between;
@@ -139,7 +138,7 @@ main {
 .about-wrapper img {
     width: 400px;
     height: 450px;
-    border-radius: 5PX 30px;
+    border-radius: 5px 30px;
 }
 
 .about-wrapper .about-desc {
@@ -192,11 +191,47 @@ main {
 }
 
 /* Review Section */
-
 .testimionials{
     height: 50vh;
-    /* margin: 100px 0; */
 }
 .reviews {
+    margin: 50px 0;
     grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    gap: 15px;
+}
+
+.review-card {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.review-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #181f1cff;
+}
+
+.contact-group {
+    background-color: #0be328ff;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: row-reverse; */
+}
+
+.contact img {
+    height: 400px;
+    width: 350px;
+}
+
+.contact-group {
+    justify-content: space-between;
+    align-items: center;
 }
