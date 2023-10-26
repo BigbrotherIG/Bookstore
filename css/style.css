@@ -218,20 +218,85 @@ main {
     background-color: #181f1cff;
 }
 
-.contact-group {
-    background-color: #0be328ff;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
-    /* flex-direction: row-reverse; */
-}
 
 .contact img {
-    height: 400px;
+    height: 460px;
     width: 350px;
 }
 
 .contact-group {
     justify-content: space-between;
     align-items: center;
+}
+
+.contact-group {
+    /* background-color: #0be328ff; */
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: row-reverse; */
+    padding: 0 50px;
+    /* gap: 50px; */
+}
+
+form {
+    justify-content: center;
+    flex-direction: column;
+    max-width: 400px;
+    width: 400%;
+    padding: 35px;
+}
+
+.input-group {
+    flex-direction: column;
+}
+
+.input-group label {
+    font-size: 18px;
+}
+
+.input-group input {
+    padding:  10px;
+    margin: 8px 0;
+    border: .5px solid #000;
+    border-radius: 5px;
+}
+
+.input-group textarea {
+    padding:  10px;
+    border: .5px solid #000;
+    border-radius: 5px;
+    resize: none;
+}
+
+form input[type="submit"] {
+    margin: 5px 0;
+    padding:  10px;
+    width: 100px;
+    border: .5px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: .9em
+}
+
+form input[type="submit"]:hover {
+    transform: scale(1.02);
+    transition: all 2s #000;
+}
+
+/* Footer Section */
+footer {
+    height: 50vh;
+    margin: 0 5vw;
+    margin-top: 100px;
+}
+
+.main-footer {
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+}
+
+.sub-footer {
+    justify-content: center;
+    flex-direction: column;
 }
