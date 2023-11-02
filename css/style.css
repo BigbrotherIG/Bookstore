@@ -6,7 +6,6 @@
     padding: unset;
     box-sizing: border-box;
     outline: none;
-    background-color: #ffffffee;
 }
 
 :root {
@@ -30,6 +29,7 @@
 /*  */
 body {
     font-family: 'roboto', 'San-serif';
+    background-color: #ffffffee;
 }
 
 a {
@@ -55,6 +55,10 @@ li  {
     color: var(--bg-primary);
 }
 
+.text-1 {
+    color: var(--bg-warning);
+}
+
 .text-center {
     text-align: center;
 }
@@ -67,12 +71,24 @@ li  {
     font-size: 2.2em;
 }
 
+.text-h3 {
+    font-size: 1.8em;
+}
+
+.text-h4 {
+    font-size: 1.4em;
+}
+
 main {
     margin: 0 5vw;
 }
 
 .p-1 {
     padding: 10px 0;
+}
+
+.btn {
+    cursor: pointer;
 }
 /*  */
 
@@ -107,17 +123,71 @@ main {
     font-size: 2.3em;
 }
 
+.hero-btn {
+    width: 55%;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.subcribe {
+    padding: 12px 15px;
+    background-color: #0f0e0e;
+    color: #fff;
+    border: none;
+    border-radius: 80px;
+    font-size: 15px;
+}
+
+.addbtn {
+    border: none;
+    background-color: transparent;
+    border-bottom: .5px solid #000;
+    font-size: 15px;
+    padding: 12px 15px;
+}
+
+.subcribe:hover, .addbtn:hover {
+    transform: scale(1.09);
+}
+
+.social-icons ul{
+    justify-content: space-between;
+}
+
 .hero-image {
     width: 50%;
     justify-content: flex-end;
 } 
 
 .hero-image img {
-    width: 350px;
+    width: 400px;
     height: 350px;
-    border-radius: 50%;
+    /* border-radius: 50%; */
 }
 
+.community, .social-icons  {
+    margin-top: 20px;
+}
+
+.social-icons ul {
+    /* justify-content: flex-start; */
+}
+
+.social-icons li a {
+    padding: 8px;
+    border-radius: 50%;
+    /* color: var(--sgbus-green); */
+}
+
+.social-icons li a:last-child(2) {
+    background-color: #ffeff8;
+}
+.social-icons li a:hover {
+    background-color: var(--bg-dark);
+    /* color: var(--sgbus-green); */
+    transform: scale(1.1);
+    transition-duration: .5s;
+}
 /* About Section */
 .about {
     height: 80vh;
@@ -135,6 +205,7 @@ main {
     justify-content: space-between;
     align-items: center;
 }
+
 .about-wrapper img {
     width: 400px;
     height: 450px;
@@ -184,18 +255,31 @@ main {
     transform: scale(1.03);
     cursor: pointer;
 }
+
 .card-text {
-    padding: 10px 2px;
+    padding: 10px 4px;
     justify-content: center;
     align-items: center;
 }
 
+.card-text button {
+    margin: 0 3px;
+    padding: 8px 2px;
+    border: .5px solid #000;
+    border-radius: 6px;
+}
+
+.card-text button:hover {
+   transform: scale(1.02);
+}
 /* Review Section */
 .testimionials{
     height: 50vh;
 }
+
 .reviews {
-    margin: 50px 0;
+    margin: 25px 0;
+    padding: 0 15px;
     grid-template-columns: repeat(4, 1fr);
     align-items: center;
     gap: 15px;
@@ -204,20 +288,24 @@ main {
 .review-card {
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: column-reverse;
 }
 
 .review-card img {
-    width: 100px;
-    height: 100px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
+    align-self: flex-start;
 }
 
 /* Contact Section */
-.contact {
-    background-color: #181f1cff;
+#contact {
+    background-color: rgb(136, 247, 197);
 }
 
+.contact {
+    /* background-color: rgb(136, 247, 197); */
+}
 
 .contact img {
     height: 460px;
@@ -230,16 +318,15 @@ main {
 }
 
 .contact-group {
-    /* background-color: #0be328ff; */
     height: 100vh;
     align-items: center;
     justify-content: center;
-    /* flex-direction: row-reverse; */
     padding: 0 50px;
     /* gap: 50px; */
 }
 
 form {
+    background-color: rgb(255, 255, 255);
     justify-content: center;
     flex-direction: column;
     max-width: 400px;
@@ -286,16 +373,25 @@ form input[type="submit"]:hover {
 
 /* Footer Section */
 footer {
-    height: 50vh;
+    height: 40vh;
     margin: 0 5vw;
     margin-top: 100px;
 }
 
 .main-footer {
+    padding: 0 20px;
     grid-template-columns: repeat(4,1fr);
     gap: 30px;
+    align-items: center;
 }
 
+.main-footer h3 {
+    font-size: 1.5em;
+}
+
+.main-footer hr {
+    margin-bottom: 10px;
+}
 .sub-footer {
     justify-content: center;
     flex-direction: column;

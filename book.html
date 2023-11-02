@@ -7,8 +7,11 @@
     <meta name="description" content="Book Store for any book you can imagine ">
     <title>Book Store</title>
 
-    <!-- Stylesheet -->
+    <!-- Internal Stylesheet -->
     <link rel="stylesheet" href="./css/style.css">
+
+    <!-- External Stylesheet -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <header class="main-header flex">
@@ -29,11 +32,26 @@
         <section>
             <div class="hero flex">
                 <div class="hero-text">
-                    <h2>Get the right <span class="text">collection</span> of books with <span class="text-font">Book<span class="text">Store</span></span>.</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo totam repudiandae beatae impedit dolor dolore aspernatur architecto fugit praesentium quod.</p>
+                    <h2>Get the right <span class="text">collection</span> of books with <span class="text-font">Book<span class="text">Store</span></span>.</h2><br>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo totam repudiandae beatae impedit dolor dolore aspernatur architecto fugit praesentium quod.</p><br>
+                    <div class="hero-btn flex">
+                        <button class="subcribe btn">Search for books</button>
+                        <button class="addbtn btn">Add to collection</button>
+                    </div><br>
+                    <div class="community">
+                        <p class="text-font text-h3">Join <span class="text-1">Our</span> Community</p>
+                        <div class="social-icons">
+                            <ul class="flex">
+                                <li><a href="https://facebook.com" class="bx bx-md bxl-facebook"></a></li>
+                                <li><a href="https://twitter.com" class="bx bx-md bxl-twitter"></a></li>
+                                <li><a href="https://instagram.com" class="bx bx-md bxl-instagram"></a></li>
+                                <li ><a href="https://linkedin.com" class="bx bx-md bxl-linkedin"></a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <div class="hero-image flex">
-                    <img src="img/img-1.jpg" alt="">
+                    <img src="img/undraw_bookshelves_re_lxoy.svg" alt="">
                 </div>
             </div>
         </section>
@@ -65,7 +83,7 @@
                         <img src="./img/img-3.jpg" alt="">
                         <div class="card-text">
                             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas distinctio doloribus adipisci, minus autem sequi?</p>                        
-                            <button>Read more</button>
+                            <button class="btn">Read more</button>
                         </div>
                     </div>
 
@@ -73,7 +91,7 @@
                         <img src="./img/img-2.jpg" alt="">
                         <div class="card-text">
                             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas distinctio doloribus adipisci, minus autem sequi?</p>                        
-                            <button>Read more</button>
+                            <button class="btn">Read more</button>
                         </div>
                     </div>
 
@@ -81,7 +99,7 @@
                         <img src="./img/img-1.jpg" alt="">
                         <div class="card-text">
                             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas distinctio doloribus adipisci, minus autem sequi?</p>                        
-                            <button>Read more</button>
+                            <button class="btn">Read more</button>
                         </div>
                     </div>
                               
@@ -117,9 +135,9 @@
                         </div>
                     </div>
                     <div class="review-card flex">
-                        <img src="img/img-1.jpg">
+                        <img src="img/img-1.jpg"><br>
                         <div class="review-text">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium eos ipsam quo!</p><br>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium eos ipsam quo!</p>
                             <small>Eze Kelechi</small>
                         </div>
                     </div>
@@ -128,7 +146,7 @@
         <!-- End of Reviews Section -->
 
         <!-- Contact Section-->
-        <section>
+        <section id="contact">
             <div class="contact">
                 <h2 class="text-center text-h2 text-font">Contact <span class="text">Us</span></h2>
                 <div class="contact-group flex">
@@ -197,7 +215,8 @@
             </div>
         </div>
         <div class="sub-footer flex">
-            <h4 class="text-center">Igbifa Godwin</h4>
+            <h4 class="text-center">Copyright &copy; <script>document.write(new Date().getFullYear())</script> All Rights Reserved</h4>
+            <p class="text-center">Design and develop by <a href="https://igbifagodwin.netlify.app" target="_blank">Igbifa Godwin</a></p>
         </div>
     </footer>
 </body>
