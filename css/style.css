@@ -37,6 +37,10 @@ a {
 }
 .img {
     max-width: 100%;
+    cursor: pointer;
+}
+img {
+    cursor: pointer;
 }
 
 .flex {
@@ -110,7 +114,7 @@ main {
 
 .hero {
     height: 90vh;
-    justify-content: space-between;
+    justify-content: sspace-between;
     align-items: center;
 }
 
@@ -184,7 +188,7 @@ main {
 }
 .social-icons li a:hover {
     background-color: var(--bg-dark);
-    /* color: var(--sgbus-green); */
+    color: var(--sgbus-green);
     transform: scale(1.1);
     transition-duration: .5s;
 }
@@ -374,8 +378,10 @@ form input[type="submit"]:hover {
 /* Footer Section */
 footer {
     height: 40vh;
-    margin: 0 5vw;
+    padding: 0 5vw;
     margin-top: 100px;
+    background-color: #070707;
+    color: #fff;
 }
 
 .main-footer {
@@ -386,13 +392,34 @@ footer {
 }
 
 .main-footer h3 {
+    color: #f1eaea;
     font-size: 1.5em;
 }
 
 .main-footer hr {
     margin-bottom: 10px;
 }
+
 .sub-footer {
+    margin-top: 80px;
     justify-content: center;
     flex-direction: column;
+    color: #fff;
+}
+
+.footer-link ul li, .footer-extra ul li, .footer-time ul li {
+    margin: 5px 0;
+    color: #fff;
+}
+
+.footer-link ul a {
+    color: #fff;
+}
+
+.footer-link ul a:hover {
+    color: var(--bg-primary);
+}
+/* Mobile Screen */
+@media screen {
+    
 }
