@@ -194,7 +194,6 @@ main {
 }
 /* About Section */
 .about {
-    height: 80vh;
     margin: 100px 0;
 }
 
@@ -222,7 +221,6 @@ main {
 
 /* Gallery Section */
 .gallery {
-    height: 85vh;
     margin: 100px 0;
 }
 
@@ -276,9 +274,10 @@ main {
 .card-text button:hover {
    transform: scale(1.02);
 }
+
 /* Review Section */
 .testimionials{
-    height: 50vh;
+    margin: 100px 0;
 }
 
 .reviews {
@@ -316,13 +315,10 @@ main {
     width: 350px;
 }
 
-.contact-group {
-    justify-content: space-between;
-    align-items: center;
-}
+
 
 .contact-group {
-    height: 100vh;
+    /* height: 100vh; */
     align-items: center;
     justify-content: center;
     padding: 0 50px;
@@ -377,7 +373,6 @@ form input[type="submit"]:hover {
 
 /* Footer Section */
 footer {
-    height: 40vh;
     padding: 0 5vw;
     margin-top: 100px;
     background-color: #070707;
@@ -405,6 +400,7 @@ footer {
     justify-content: center;
     flex-direction: column;
     color: #fff;
+    padding: 10px 0;
 }
 
 .footer-link ul li, .footer-extra ul li, .footer-time ul li {
@@ -419,7 +415,64 @@ footer {
 .footer-link ul a:hover {
     color: var(--bg-primary);
 }
+
 /* Mobile Screen */
-@media screen {
-    
+@media  (max-width: 600px) {
+
+    .main-header .nav-links {
+        display: none;
+    }
+
+    main {
+        margin: 0 2.5vh;
+    }
+
+    .hero {
+        margin-top: 20px;
+        flex-direction: column;
+    }
+
+    .hero .hero-text, .hero-image {
+        width: 100%;
+    }
+
+    .hero-image img {
+        width: 100%;
+        height: 150px;
+    }
+
+    .about-wrapper {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .about-wrapper .about-desc {
+        width: 100%;
+    }
+
+    .about-wrapper .about-img {
+        width: 100%;
+    }
+   
+    .card-wrapper {     
+        justify-items: center;  
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .contact-group {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .main-footer {
+        padding: 0;
+        flex-direction: column;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .logo-footer {
+        grid-column: 1/3;
+    }
 }
+    
