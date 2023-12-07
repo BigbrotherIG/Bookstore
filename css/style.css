@@ -317,7 +317,7 @@ main {
 
 .contact img {
     height: 460px;
-    width: 350px;
+    width: 300px;
 }
 
 .contact-group {
@@ -332,8 +332,8 @@ form {
     background-color: rgb(255, 255, 255);
     justify-content: center;
     flex-direction: column;
-    max-width: 400px;
-    width: 400px;
+    max-width: 100%;
+    width: 300px;
     padding: 35px;
 }
 
