@@ -240,6 +240,7 @@ main {
 }
 
 .gallery .card {
+    max-width: 100%;
     width: 400px;
     height: 400px;
     align-items: center;
@@ -419,7 +420,7 @@ footer {
 }
 
 /* Mobile Screen */
-@media  (max-width: 760px) {
+@media  (max-width: 768px) {
 
     .main-header .nav-links {
         display: none;
