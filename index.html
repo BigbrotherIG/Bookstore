@@ -20,11 +20,27 @@
     <mark>Make the text mark</mark>
     <q>Make the text enquote</q>
     <s>Make the text strikes</s>
+    <marquee behavior="" direction="right">hbjkvbhjv</marquee>
 
     <!-- Image Element -->
-
     <img src="./img/img-2.jpg" alt="Library photo" style="width: 259px; height: auto;"/>
 
+    <div class="show"></div>
+    <button class="btn">Click</button>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        document.querySelector('.btn').addEventListener('click', () => {
+        swal.fire({
+    
+        }).fetch("book.html")
+        .then(x => x.text())
+        .then(call => document.querySelector(".show").innerHTML = call)
+    })
+        // fetch('www.example.com/document.html')
+        // .then(response => response.text())
+        //  Read the response as text .then(html => alert(html)); // Alert the retrieved HTML content 
+   
+    </script>
 </body>
 
 </html>
