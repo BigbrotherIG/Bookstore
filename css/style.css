@@ -460,6 +460,10 @@ footer {
         height: 150px;
     }
 
+    .subcribe:hover, .addbtn:hover {
+        transform: scale(1.03);
+    }
+
     .about-wrapper {
         justify-items: center;
         flex-direction: column-reverse;
