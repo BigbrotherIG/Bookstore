@@ -461,6 +461,7 @@ footer {
     }
 
     .about-wrapper {
+        justify-items: center;
         flex-direction: column-reverse;
         gap: 20px;
     }
@@ -469,8 +470,8 @@ footer {
         width: 100%;
     }
 
-    .about-wrapper .about-img {
-        width: 100%;
+    .about-wrapper -img {
+        max-width: 100%;
     }
    
     .card-wrapper {     
