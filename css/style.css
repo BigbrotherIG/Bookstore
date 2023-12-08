@@ -132,7 +132,7 @@ main {
 }
 
 .hero-btn {
-    width: 55%;
+    max-width: 55%;
     justify-content: space-between;
     /* align-items: center; */
 }
@@ -447,6 +447,9 @@ footer {
         flex-direction: column;
     }
 
+    .hero-btn {
+        max-width: 100%;
+    }
     .hero .hero-text, .hero-image {
         margin-top: 25px;
         width: 100%;
