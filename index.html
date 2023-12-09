@@ -32,7 +32,8 @@
         document.querySelector('.btn').addEventListener('click', () => {
         swal.fire({
     
-        }).fetch("book.html")
+        })
+        fetch("book.html")
         .then(x => x.text())
         .then(call => document.querySelector(".show").innerHTML = call)
     })

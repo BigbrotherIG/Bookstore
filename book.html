@@ -227,7 +227,7 @@
     <script src="js/app.js"></script>
     <!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
+    
     <script>
         document.querySelector(".subcribe").addEventListener("click", ()=>{
             swal.fire({
@@ -235,8 +235,13 @@
                 input: "search",
                 text: "Search your favourite book",
                 icon: "info",
-                inputAttribute: "",
+                // inputAttribute: "",
                 confirmButtonColor: "#000",
+                confirmButtonText: "Search",
+                confirmButtonText: "Search",
+                showCancelButton: "true",
+
+                fetch()
             })
         })
     </script>
