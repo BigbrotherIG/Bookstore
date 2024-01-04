@@ -14,7 +14,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <header class="main-header flex">
+    <header class="main-header flex bg">
         <h1 class="logo">Book<span>nify</span></h1>
         <nav>
             <div class="nav-menu flex">
@@ -238,11 +238,21 @@
                 // inputAttribute: "",
                 confirmButtonColor: "#000",
                 confirmButtonText: "Search",
-                confirmButtonText: "Search",
                 showCancelButton: "true",
 
                 // fetch()
             })
+            fetch("https://api.github.com/")
+            .then(res = res.json())
+            .then()
+            // .then((result) => {
+            // /* Read more about isConfirmed, isDenied below */
+            // if (result.isConfirmed) {
+            //     Swal.fire("Saved!", "", "success");
+            // } else if (result.isDenied) {
+            //     Swal.fire("Changes are not saved", "", "info");
+            // }
+            // });
         })
     </script>
 </body>

@@ -9,7 +9,7 @@
     <p style="background-color: red; color: white;">I'm Igbifa Godwin a website developer</p>
 
     <!-- Text Formatting -->
-    <b>Make the text bold</b>
+    <!-- <b>Make the text bold</b>
     <i>Make the text italicize</i>
     <u>Make the text undeline</u>
     <code>Make the text code</code>
@@ -19,27 +19,87 @@
     <strong>Make the text strong</strong>
     <mark>Make the text mark</mark>
     <q>Make the text enquote</q>
-    <s>Make the text strikes</s>
+    <s>Make the text strikes</s> -->
     <marquee behavior="" direction="right">hbjkvbhjv</marquee>
 
     <!-- Image Element -->
     <img src="./img/img-2.jpg" alt="Library photo" style="width: 259px; height: auto;"/>
 
     <div class="show"></div>
-    <button class="btn">Click</button>
+    <button class="btn">Click</button><br><br>
+    
+    <input type="text" class="text">
+    <!-- <input type="submit"> -->
+    <button class="btn2">Get</button><br><br>
+    <div class="showBook"></div><br>
+    <input type="text" class="text1">
+    <!-- <input type="submit"> -->
+    <button class="btn3">Get User</button><br><br>
+    <div class="showUser"></div>
+
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
         document.querySelector('.btn').addEventListener('click', () => {
-        swal.fire({
+        // swal.fire({
     
-        })
-        fetch("book.html")
-        .then(x => x.text())
-        .then(call => document.querySelector(".show").innerHTML = call)
+        // })
+        fetch("https://jsonplaceholder.typicode.com/posts/1/comments")
+        .then(jsp => jsp.json())
+        .then(data => {
+            let input = "<h3>Insert</h3>";
+            data.forEach((user) => {
+                input += `
+                    <div>
+                        <h3>ID: ${user.id}</h3>                
+                        <h3>ID: ${user.email}</h3>                
+                        <h3>ID: ${user.body}</h3>                
+                    </div>
+                `
+            })
+            document.querySelector(".show").innerHTML = input
+            console.log(data)
+        })        
     })
-        // fetch('www.example.com/document.html')
-        // .then(response => response.text())
-        //  Read the response as text .then(html => alert(html)); // Alert the retrieved HTML content 
+
+        document.querySelector('.btn2').addEventListener('click', () => {
+            
+            let inputText = document.querySelector(".text").value   
+            fetch("https://openlibrary.org/search.json?q"+inputText)
+            .then(pen => pen.json())
+            .then((openApi) => {
+                let output = "<h2>Books</h2";
+                openApi.forEach(function(book) {
+                    output += `
+                    <ul>
+                        <li>${book.docs[1].title}            
+                        <li>${book.docs[4].title}            
+                    </ul>                    
+                    `
+                });
+                console.log(openApi)
+            })
+        })
+
+        document.querySelector('.btn3').addEventListener('click', () => {
+            
+            let inputText1 = document.querySelector(".text1").value
+            fetch("https://api.github.com/users/"+inputText1)
+            .then(resg => resg.json())
+            .then(gitApi => {
+                let output = "<h2>Books</h2";
+                gitApi.forEach(git =>{
+                    output += `
+                    <ul>
+                        <li>Name: ${git.login}</li>     
+                        // <li>Image: ${git.avatar_url} </li>            
+                    </ul>                    
+                    `
+                    
+                });
+                document.querySelector(".showUser").innerHTML = inputText1
+                console.log(gitApi)
+            })
+    })
    
     </script>
 </body>
